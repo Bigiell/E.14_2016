@@ -1,4 +1,4 @@
 a)SELECT tytul from ksiazki WHERE wydawnictwo ='Ossolineum'
-b)SELECT ksiazki.tytul, autorzy.nazwisko from autorzy.ksiazki where autorzy.IDAutor=ksiazki.AutorID
+b)SELECT ksiazki.tytul, autorzy.nazwisko from autorzy,ksiazki where autorzy.IDAutor=ksiazki.AutorID
 c)SELECT egzemplarze.IDEgzemplarz, ksiazki.tytul from egzemplarze, ksiazki where egzemplarze.DoWypozyczenia=0 AND ksiazki.IDKsiazki=egzemplarze.KsiazkaID
 d)INSERT INTO autorzy (IDAutor,Imie,Nazwisko) VALUES ('3','Adam','Asnyk')
